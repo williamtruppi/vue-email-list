@@ -27,7 +27,7 @@ let app = new Vue ({
 
   mounted (){
     for(let i = 0; i < 36; i++){
-      this.numbersArray.push(0);
+      this.numbersArray.push("");
     }
   }
 
