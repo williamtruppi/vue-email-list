@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container d-flex">
+    <div class="griglia d-flex">
+
+      <div class="box d-flex" v-for="(number, index) in numbersArray" @click="checkNumber(index)" 
+      :class="((numbersArray[index] > 0 && numbersArray[index] <= 5) ? 'yellow' : (numbersArray[index] > 5) ? 'green' : '')">
+        <h1 v-if="rndNumber > 0">{{numbersArray[index]}}</h1>
+      </div>
+     
+      
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

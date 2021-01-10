@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* classi utility */
+
+.d-flex{
+  display: flex;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.container{
+  justify-content: center;
+  align-items: center;
+}
+
+.griglia{
+  height: 600px;
+  width: 600px;
+  background-color: lightblue;
+  flex-wrap: wrap;
+}
+
+.box{
+  width: calc(100% / 6);
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+.box > h1 {
+  height: max-content;
+  width: max-content;
+}
