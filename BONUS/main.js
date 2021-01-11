@@ -25,9 +25,9 @@ let app = new Vue ({
     }
   },
 
-  mounted (){
+  created (){
     for(let i = 0; i < 36; i++){
-      this.numbersArray.push("");
+      this.numbersArray.push("click me");
     }
   }
 

@@ -16,7 +16,7 @@
 
       <div class="box d-flex" v-for="(number, index) in numbersArray" @click="checkNumber(index)" 
       :class="((numbersArray[index] > 0 && numbersArray[index] <= 5) ? 'yellow' : (numbersArray[index] > 5) ? 'green' : '')">
-        <h1 v-if="rndNumber > 0">{{numbersArray[index]}}</h1>
+        <h1 v-if="rndNumber > 0">{{number}}</h1>
       </div>
      
       
